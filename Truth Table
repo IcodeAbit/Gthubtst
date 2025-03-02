@@ -1,0 +1,20 @@
+def boolean_to_string(value):
+
+    return "True " if value else "False"
+
+def print_truth_table():
+    # Print header
+    print(" p     | q     | p and q | p or q ")
+    print("-------|-------|---------|--------")
+
+    # Generate all combinations of (p, q)
+    for p in [True, False]:
+        for q in [True, False]:
+            p_and_q = p and q  # Logical AND
+            p_or_q = p or q    # Logical OR
+
+            # Print row
+            print(f"{boolean_to_string(p)} | {boolean_to_string(q)} | {boolean_to_string(p_and_q)}  | {boolean_to_string(p_or_q)}")
+
+# Run the function
+print_truth_table()

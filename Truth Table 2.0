@@ -1,0 +1,14 @@
+def truth_table():
+    print(" p     | q     | p and q | p or q ")
+    print("-------|-------|---------|--------")
+
+    values = [True, False]
+    
+    for p in values:
+        for q in values:
+            p_and_q = p and q  # Logical AND
+            p_or_q = p or q    # Logical OR
+            print(f" {p:<5} | {q:<5} | {p_and_q:<7} | {p_or_q:<6} ")
+
+# Run the truth table generator
+truth_table()
